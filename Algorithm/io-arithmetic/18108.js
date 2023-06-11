@@ -4,6 +4,6 @@ const rl = require('readline').createInterface({
 });
 
 rl.question('', (line) => {
-    console.log(parseInt(line) + 543);
+    console.log(parseInt(line) - 543);
     rl.close();
 });
