@@ -5,9 +5,9 @@ const rl = require('readline').createInterface({
 
 let lines = [];
 
-rl.on('line', function (line) {
+rl.on('line', (line) => {
     lines.push(line);
-}).on('close', function () {
+}).on('close', () => {
     let n = Number(lines[0]);
     let arr = lines[1].split(' ').map(Number);
     let v = Number(lines[2]);
